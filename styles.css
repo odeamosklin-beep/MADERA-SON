@@ -1,0 +1,98 @@
+
+:root{
+  --amarillo:#f59e0b;
+  --azul:#0284c7;
+  --rojo:#ef4444;
+  --turquesa:#06b6d4;
+  --madera:#a16207;
+  --bg:#fffaf0;
+  --muted:#666;
+  --card:#ffffff;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter, system-ui, Arial, sans-serif;
+  background:linear-gradient(180deg,var(--bg),#ffffff);
+  color:#111827;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding:24px;
+}
+
+.container{
+  max-width:1100px;
+  margin:0 auto;
+  background:var(--card);
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(2,6,23,0.08);
+  overflow:hidden;
+}
+
+.header{
+  display:flex;
+  gap:20px;
+  align-items:center;
+  padding:18px;
+  background:linear-gradient(90deg,var(--turquesa),var(--azul));
+  color:white;
+}
+.logo{
+  width:96px;
+  height:96px;
+  border-radius:8px;
+  background:linear-gradient(135deg,var(--amarillo),var(--rojo));
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  font-size:18px;
+  color:rgba(0,0,0,0.6);
+}
+.header h1{margin:0;font-size:24px}
+.header p{margin:0;opacity:0.9;font-size:14px}
+
+.layout{
+  display:grid;
+  grid-template-columns:1fr 360px;
+  gap:18px;
+  padding:20px;
+}
+
+.card{
+  background:#fff;
+  border-radius:10px;
+  padding:14px;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.04);
+}
+
+.field{margin-bottom:10px}
+.field label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+.field input[type="text"], .field input[type="email"], .field textarea{width:100%;padding:8px;border-radius:6px;border:1px solid #e5e7eb}
+.field textarea{min-height:90px;resize:vertical}
+
+.small{font-size:13px;color:var(--muted)}
+
+.preview{
+  border-radius:8px;
+  padding:12px;
+  background:linear-gradient(180deg,#fff,#f8fafc);
+}
+
+.members-list{margin:0;padding:0;list-style:disc;margin-left:20px}
+
+.btn{
+  display:inline-block;padding:8px 12px;border-radius:8px;background:var(--amarillo);color:#111;font-weight:600;text-decoration:none;border:none;cursor:pointer
+}
+.btn.secondary{background:#e5e7eb;color:#111}
+.btn.danger{background:#fecaca;color:#6b021e}
+
+.preview .title{font-weight:700;margin-bottom:6px}
+.footer{padding:14px;text-align:center;color:var(--muted);font-size:13px;background:linear-gradient(90deg,#fff, #fff0)} 
+
+.upload{
+  display:inline-block;padding:8px 10px;border-radius:8px;background:#f3f4f6;border:1px dashed #e5e7eb;cursor:pointer;font-size:13px
+}
+.upload input{display:none}
+.small-note{font-size:12px;color:var(--muted);margin-top:8px}
